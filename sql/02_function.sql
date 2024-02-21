@@ -7,7 +7,6 @@ $$
 SELECT actor_id
 FROM actor
 WHERE first_name ILIKE $1 || '%'
-ORDER BY actor_id;
 $$
 LANGUAGE SQL
 IMMUTABLE
